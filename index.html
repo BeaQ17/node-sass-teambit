@@ -5,33 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teambit</title>
+    <!-- css -->
     <link rel="stylesheet" href="./dist/css/app.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
 </head>
 <body>
     
+    <!-- header -->
     <header id="site_header">
         <nav id="site_nav">
             <div id="logo">
                 <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/vw5wmrnauqst0bkngar8" alt="teambit logo">
                 Teambit
             </div>
-            <ul>
-                <a href="#">Solutions</a>
-                <a href="#">Pricing</a>
-                <a href="#">Blog</a>
-                <a href="#">Sign in</a>
-            </ul>
-            <div id="google_signup">
-                
-            </div>
-            
+            <div class="right_m">
+                <ul>
+                    <a href="#">Solutions<i class="fas fa-chevron-down"></i></a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Sign in</a>
+                </ul>
+                <div id="google_signup">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png" alt="google logo">
+                    Sign up
+                </div>
+            </div> 
         </nav>
+
+        <!-- jumbotron -->
+        <div class="jumbotron">
+            <div class="left_jumbo">
+                <h1>Understand, recognize and develop your people</h1>
+                <p>Teambit helps teams create a high performing culture with regular feedback.</p>
+
+                <!-- sign up buttons -->
+                <div id="signup">
+                    <button class="btn_signup">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png" alt="google logo">
+                        Sign up with Google
+                    </button>
+                    or
+                    <button class="btn_signup">
+                        <img src="https://www.voxloud.com/it/wp-content/uploads/2020/10/slack-voxloud-integration.png" alt="slack logo">
+                        Sign up with Slack
+                    </button>
+                </div>
+                <a href="#">or use your email address <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <!-- hero image -->
+            <div class="right_jumbo">
+                <img src="./src/imgs/illustration-main.jpg" alt="hero image">
+            </div>
+        </div>
+        
     </header>
+
+    <!-- main -->
     <main id="site_main">
         <section class="top_solid"></section>
         <section class="white"></section>
         <section class="bottom_solid"></section>
     </main>
+
+    <!-- footer -->
     <footer id="site_footer"></footer>
 
     <script src="./dist/js/app.js"></script>

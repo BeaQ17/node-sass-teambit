@@ -1,14 +1,94 @@
 /* navbar */
-
-#site_header{
-    border-bottom: 1px solid black;
-}
-
 nav{
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 10px;
+
+    #logo{
+        display: flex;
+        width: fit-content;
+        align-items: center;
+    }
 
     img{
         width: $logo_width;
     }
+
+    .right_m{
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        align-items: center;
+
+        a{
+            margin-right: 20px;
+            text-decoration: none;
+            color: $font_color;
+        }
+    }
+}
+
+#google_signup{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    border: 1px solid darkblue;
+    color: darkblue;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+/* jumbotron */
+.jumbotron{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.left_jumbo, .right_jumbo{
+    width: 50%;
+
+    img{
+        width: 100%;
+    }
+
+    a{
+        color: $font_color;
+        font-size: 12px;
+        text-decoration: none;
+        margin-left: 5px;
+        margin-top: 15px;
+        display: block;
+    }
+}
+
+#signup{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 25px;
+
+    .btn_signup{
+        display: flex;
+        align-items: center;
+        color: white;
+        width: fit-content;
+        background-color: rgb(46, 46, 110);
+        border-radius: 5px;
+        padding: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+
+        img{
+            width: 20px;
+        }
+    }
+
+    
 }

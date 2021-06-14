@@ -4,10 +4,113 @@
   padding: 0;
 }
 
+body {
+  width: 80%;
+  margin: auto;
+  font-family: "Rubik", sans-serif;
+  color: #382828;
+}
+
+i {
+  margin-left: 5px;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+p {
+  margin-top: 15px;
+  line-height: 35px;
+}
+
 /* navbar */
 nav {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+nav #logo {
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
 }
 nav img {
   width: 25px;
+}
+nav .right_m {
+  display: flex;
+  flex-direction: row;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+}
+nav .right_m a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #382828;
+}
+
+#google_signup {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  border: 1px solid darkblue;
+  color: darkblue;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* jumbotron */
+.jumbotron {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.left_jumbo, .right_jumbo {
+  width: 50%;
+}
+.left_jumbo img, .right_jumbo img {
+  width: 100%;
+}
+.left_jumbo a, .right_jumbo a {
+  color: #382828;
+  font-size: 12px;
+  text-decoration: none;
+  margin-left: 5px;
+  margin-top: 15px;
+  display: block;
+}
+
+#signup {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 25px;
+}
+#signup .btn_signup {
+  display: flex;
+  align-items: center;
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #2e2e6e;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#signup .btn_signup img {
+  width: 20px;
 }
