@@ -1,0 +1,14 @@
+/* navbar */
+
+#site_header{
+    border-bottom: 1px solid black;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+
+    img{
+        width: $logo_width;
+    }
+}
